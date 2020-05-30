@@ -1,0 +1,6 @@
+<a routerLink="/detail/{{hero.id}}">
+  <span class="badge">{{hero.id}}</span> {{hero.name}} jan
+</a>
+<button class="delete asl" (click)="onDeleteClick($event)">x</button>
+<button class="delete add" (click)="onAddClick(hero)">+</button>
+
