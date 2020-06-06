@@ -18,6 +18,9 @@ import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { StrengthPipe } from './strength/strength.pipe';
 import { HeroComponent } from './hero/hero.component';
+import { UserComponent } from './user/user.component';
+import {UserService} from "./user/user.service";
+import {ReversePipe} from "./user/reverse.pipe";
 
 @NgModule({
   imports: [
@@ -41,7 +44,9 @@ import { HeroComponent } from './hero/hero.component';
     MessagesComponent,
     HeroSearchComponent,
     StrengthPipe,
-    HeroComponent
+    HeroComponent,
+    UserComponent,
+    ReversePipe,
   ],
   providers: [ HeroService, MessageService ],
   bootstrap: [ AppComponent ]
